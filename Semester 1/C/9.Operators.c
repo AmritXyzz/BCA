@@ -8,7 +8,7 @@ int main ()
 	printf("Enter an expression : ");
 	scanf("%f %c %f", &n1, &operator, &n2);
 	
-	printf("\rResult : ");
+	printf("Result : ");
 	
 	switch (operator) {
 		case '+':
