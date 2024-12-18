@@ -11,7 +11,7 @@ int main()
     printf("The area of a circle is : %.2f\n", area);
     
     circum = PI*radius*radius;
-	printf("The circumference of a circle is : %.2f", circum);
+    printf("The circumference of a circle is : %.2f", circum);
 	
-	return 0;
+    return 0;
 }
