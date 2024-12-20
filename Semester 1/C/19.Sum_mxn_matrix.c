@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int i, j, m, n;
+    int m, n;
     
     printf("Enter the number of rows (m): ");
     scanf("%d", &m);
@@ -11,6 +11,8 @@ int main() {
     int matrix[m][n];
     
     printf("Enter the elements of the matrix:\n");
+    
+    int i, j;
     for (i = 0; i < m; i++) {
         for (j = 0; j < n; j++) {
             scanf("%d", &matrix[i][j]);
