@@ -20,6 +20,7 @@ int main() {
         }
 
         printf("Decimal: %d\n", decimal);
+        
     } else if (choice == 2) {
         // Decimal to Binary
         printf("Enter a decimal number: ");
@@ -28,10 +29,17 @@ int main() {
         if (number == 0) {
             printf("Binary: 0\n");
         } else {
-            printf("Binary: ");
+            int binary[32], i = 0;
             while (number > 0) {
-                printf("%d", number % 2);
+                binary[i++] = number % 2;
                 number /= 2;
+            }
+
+            printf("Binary: ");
+            
+            int j;
+            for (j = i - 1; j >= 0; j--) {
+                printf("%d", binary[j]);
             }
             printf("\n");
         }
